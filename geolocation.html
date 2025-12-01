@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Where Am I?</tilte>
+</head>
+<body>
+<h3>Where Am I</h3>
+<button onclick="getLocation">Where Am I</button>
+<p id="location"></p>
+<script>
+function getLocation(){
+
+      if(navigator.geolocation())
+{
+navigator.geolocation.getCurrentPosition("position")=>
+{
+const lat=posiotion.coords.latitude;
+const lon=posiotion.coords.longitude;
+document.getElementById("location").innerText='Latitude:${lat},Longitude:${lon};
+}error()=>{
+document.getElementById("location").innerText=error message;
+});
+else
+{
+document.getElementById("location").innerText=geolocation not supported;
+}
+}
+}
+</script>
+</body>
+</html>
