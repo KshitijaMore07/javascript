@@ -1,0 +1,11 @@
+const products = [
+  { name: "Pen", price: 20 },
+  { name: "Book", price: 120 },
+  { name: "Bag", price: 550 }
+];
+
+products.forEach(p => {
+  if (p.price > 100) {
+    console.log(p.name);
+  }
+});
