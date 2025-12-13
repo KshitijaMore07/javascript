@@ -1,0 +1,3 @@
+const user = { name: "Amit", age: 22, city: "Pune" };
+
+const { name, age, city } = user;
