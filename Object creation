@@ -1,0 +1,14 @@
+const student = {
+  name: "Rahul",
+  age: 20,
+  course: "BSc CS",
+  marks: [70, 80, 75, 85],
+
+  averageMarks: function () {
+    let sum = 0;
+    for (let m of this.marks) {
+      sum += m;
+    }
+    return sum / this.marks.length;
+  }
+};
