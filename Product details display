@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <script>
+        function showDetails() {
+            let productName = "Laptop";
+            let price = 55000;
+            let quantity = 2;
+            let total = price * quantity;
+
+            document.getElementById("details").innerHTML =
+                "Product Name: " + productName + "<br>" +
+                "Price: ₹" + price + "<br>" +
+                "Quantity: " + quantity + "<br>" +
+                "Total Amount: ₹" + total;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Product Details</h2>
+    <button onclick="showDetails()">Show Product</button>
+    <p id="details"></p>
+</body>
+</html>
