@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Color</title>
+<script>
+function changeColor() {
+    document.getElementById("txt").style.color = "red";
+}
+</script>
+</head>
+<body>
+<p id="txt">JavaScript is Easy</p>
+<button onclick="changeColor()">Change Color</button>
+</body>
+</html>
