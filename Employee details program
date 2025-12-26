@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+    <script>
+        function showEmployee() {
+            let empId = 101;
+            let empName = "Rahul Patil";
+            let empDept = "IT";
+            let empSalary = 35000;
+
+            document.getElementById("output").innerHTML =
+                "Employee ID: " + empId + "<br>" +
+                "Employee Name: " + empName + "<br>" +
+                "Department: " + empDept + "<br>" +
+                "Salary: ₹" + empSalary;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Employee Details</h2>
+    <button onclick="showEmployee()">Show Employee</button>
+    <p id="output"></p>
+</body>
+</html>
